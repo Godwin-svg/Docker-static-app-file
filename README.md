@@ -13,6 +13,7 @@ This project demonstrates how to containerize and deploy a static website using 
 - AWS account with permissions to create ECR repositories and networking resources
 - Git installed locally
 
+  ```bash
 ## Steps to Deploy the Static Website
 
 ### 1. Setup Your GitHub Repository
@@ -73,7 +74,6 @@ Tag your Docker image for ECR:
       - Forward traffic to your target group
       - Attach your SSL certificate to secure your website
 
-  ```bash
 
 
 
