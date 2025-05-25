@@ -48,7 +48,7 @@ Authenticate Docker to your ECR repository:
 Tag your Docker image for ECR: 
  - docker push <your-account-id>.dkr.ecr.us-east-1.amazonaws.com/repository_name
 
- AWS Infrastructure Setup
+ ## AWS Infrastructure Setup
 ### 6. Build a Three-Tier VPC in AWS
  Create Public Subnets for your Load Balancer.
  Create Private Subnets for your ECS containers.
