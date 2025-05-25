@@ -12,19 +12,19 @@ This project demonstrates how to containerize and deploy a static website using 
 - AWS account with permissions to create ECR repositories and networking resources
 - Git installed locally
 
-## Steps to Deploy the Static Website
+### Steps to Deploy the Static Website
 
-### 1. Setup Your GitHub Repository
+## 1. Setup Your GitHub Repository
 - Create a GitHub repository to store your Dockerfile and website files.
 - Clone the repository locally:
 
   git clone <your-repository-url>
   cd <repository-folder>
   
-### 2. Create a Dockerfile
+## 2. Create a Dockerfile
 - Inside your project folder, create a file named Dockerfile and add your website setup commands.
 
-#### 3. Build and Run the Docker Container Locally
+## 3. Build and Run the Docker Container Locally
 - Build your Docker image:
  - docker build -t jupiter .
 - Run the container locally:
@@ -40,7 +40,7 @@ This project demonstrates how to containerize and deploy a static website using 
 ## Push the image:
 docker push your-dockerhub-username/image_name
 
-#### 5. Push Docker Image to Amazon ECR
+## 5. Push Docker Image to Amazon ECR
 - Create an Amazon ECR repository: 
  - aws ecr create-repository --repository-name repository_name --region us-east-1 
 Authenticate Docker to your ECR repository: 
@@ -53,7 +53,7 @@ Tag your Docker image for ECR:
  Create Public Subnets for your Load Balancer.
  Create Private Subnets for your ECS containers.
 
-### 7. Configure Security Groups
+## 7. Configure Security Groups
  Application Load Balancer Security Group (ALB-SG):
   - Allow inbound HTTP (port 80) and HTTPS (port 443) traffic from the internet.
  Container Security Group (Container-SG):
@@ -62,10 +62,10 @@ Tag your Docker image for ECR:
 ### 8. Create a Target Group
   - Use IP addresses as the target type for your target group.
 
-#### 9. Set up Application Load Balancer (ALB)
+### 9. Set up Application Load Balancer (ALB)
   - Associate the ALB with your public subnets and ALB-SG security group.
 
-### 10. Configure DNS and SSL
+## 10. Configure DNS and SSL
   - Create a DNS A record in Route 53 pointing to your ALB.
   - Use AWS Certificate Manager (ACM) to request or import an SSL certificate for your domain.
   - Create an HTTPS listener on your ALB:
