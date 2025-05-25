@@ -18,7 +18,7 @@ This project demonstrates how to containerize and deploy a static website using 
 ### 1. Setup Your GitHub Repository
 - Create a GitHub repository to store your Dockerfile and website files.
 - Clone the repository locally:
-  ```bash
+
   git clone <your-repository-url>
   cd <repository-folder>
   
@@ -42,11 +42,11 @@ docker tag jupiter your-dockerhub-username/image_name
 docker push your-dockerhub-username/image_name
 
 #### 5. Push Docker Image to Amazon ECR
-- Create an Amazon ECR repository: \
- - aws ecr create-repository --repository-name repository_name --region us-east-1 \
-Authenticate Docker to your ECR repository: \
- - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <your-account-id>.dkr.ecr.us-east-1.amazonaws.com \
-Tag your Docker image for ECR: \
+- Create an Amazon ECR repository: 
+ - aws ecr create-repository --repository-name repository_name --region us-east-1 
+Authenticate Docker to your ECR repository: 
+ - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <your-account-id>.dkr.ecr.us-east-1.amazonaws.com 
+Tag your Docker image for ECR: 
  - docker push <your-account-id>.dkr.ecr.us-east-1.amazonaws.com/repository_name
 
  AWS Infrastructure Setup
@@ -73,7 +73,7 @@ Tag your Docker image for ECR: \
       - Forward traffic to your target group
       - Attach your SSL certificate to secure your website
 
-
+  ```bash
 
 
 
