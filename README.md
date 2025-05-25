@@ -25,11 +25,11 @@ This project demonstrates how to containerize and deploy a static website using 
 - Inside your project folder, create a file named Dockerfile and add your website setup commands.
 
 #### 3. Build and Run the Docker Container Locally
-Build your Docker image:
- docker build -t jupiter .
-Run the container locally:
- docker run -d -p 8080:80 jupiter
- Open your browser and go to http://localhost:8080 to verify the website is working.
+- Build your Docker image:
+ - docker build -t jupiter .
+- Run the container locally:
+ - docker run -d -p 8080:80 jupiter
+-  Open your browser and go to http://localhost:8080 to verify the website is working.
 
 ### 4. Push Docker Image to Docker Hub
 Create a new repository on Docker Hub
