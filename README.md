@@ -31,7 +31,7 @@ This project demonstrates how to containerize and deploy a static website using 
  - docker run -d -p 8080:80 jupiter
 -  Open your browser and go to http://localhost:8080 to verify the website is working.
 
-### 4. Push Docker Image to Docker Hub
+## 4. Push Docker Image to Docker Hub
 - Create a new repository on Docker Hub
 - Authenticate Docker with Docker Hub:
 - docker login -u your-dockerhub-username
