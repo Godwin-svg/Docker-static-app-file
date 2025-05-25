@@ -43,10 +43,10 @@ docker push your-dockerhub-username/image_name
 
 #### 5. Push Docker Image to Amazon ECR
 Create an Amazon ECR repository: \
-aws ecr create-repository --repository-name repository_name --region us-east-1
-Authenticate Docker to your ECR repository:
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <your-account-id>.dkr.ecr.us-east-1.amazonaws.com
- Tag your Docker image for ECR:
+aws ecr create-repository --repository-name repository_name --region us-east-1 \
+Authenticate Docker to your ECR repository: \
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <your-account-id>.dkr.ecr.us-east-1.amazonaws.com \
+ Tag your Docker image for ECR: \
 docker push <your-account-id>.dkr.ecr.us-east-1.amazonaws.com/repository_name
 
  AWS Infrastructure Setup
