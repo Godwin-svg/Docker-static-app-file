@@ -6,14 +6,12 @@ This project demonstrates how to containerize and deploy a static website using 
  Amazon Elastic Container Registry (ECR), and set up a secure AWS infrastructure with a three-tier VPC and Application Load Balancer (ALB).
 
 ## Prerequisites
-
 - Docker installed locally
 - AWS CLI installed and configured
 - Docker Hub account
 - AWS account with permissions to create ECR repositories and networking resources
 - Git installed locally
 
-  ```bash
 ## Steps to Deploy the Static Website
 
 ### 1. Setup Your GitHub Repository
