@@ -32,11 +32,11 @@ This project demonstrates how to containerize and deploy a static website using 
 -  Open your browser and go to http://localhost:8080 to verify the website is working.
 
 ### 4. Push Docker Image to Docker Hub
-Create a new repository on Docker Hub
-Authenticate Docker with Docker Hub:
-docker login -u your-dockerhub-username
-Tag the image:
-docker tag jupiter your-dockerhub-username/image_name
+- Create a new repository on Docker Hub
+- Authenticate Docker with Docker Hub:
+- docker login -u your-dockerhub-username
+- Tag the image:
+- docker tag jupiter your-dockerhub-username/image_name
 ## Push the image:
 docker push your-dockerhub-username/image_name
 
