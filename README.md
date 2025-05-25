@@ -1,3 +1,5 @@
+![Reference-Architecturet](VPC-Reference-Architecture.png)
+
 # Static Website Deployment Using Docker, Docker Hub, and AWS, ECS and ECR
 
 This project demonstrates how to containerize and deploy a static website using Docker, push the image to Docker Hub and
