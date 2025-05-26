@@ -72,7 +72,11 @@ Tag your Docker image for ECR:
       - Forward traffic to your target group
       - Attach your SSL certificate to secure your website
 
-
+Reference :  
+Docker: Get Started Guide: https://docs.docker.com/get-started/   
+AWS: Pushing a Docker Image to Amazon ECR: https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html   
+AWS: VPC with Public and Private Subnets (NAT) : https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html   
+AWS Architecture Icons : https://aws.amazon.com/architecture/icons/
 
 
 
